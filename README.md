@@ -22,4 +22,4 @@ Rockbuster is a fictional movie rental company transitioning from a brick-and-mo
 + store
 
 
-![test.](ROCKBUSTER logo.png)
+![test.]([ROCKBUSTER logo.png](https://github.com/bruceramseyer/rockbuster/blob/main/ROCKBUSTER%20logo.png))
