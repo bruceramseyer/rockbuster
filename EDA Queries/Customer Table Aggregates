@@ -1,1 +1,24 @@
+/*Numerical fields EDA for customer table*/	
 
+SELECT MIN(store_id) AS min_store_id,	
+	MAX(store_id) AS max_store_id,
+	AVG(store_id) AS avg_store_id,
+ 	COUNT(store_id) AS store_id_count, 
+	MIN(address_id) AS min_address_id,
+	MAX(address_id) AS max_address_id,
+	AVG(address_id) AS avg_address_id,
+ 	COUNT(address_id) AS address_id_count, 
+ 	MIN(create_date) AS min_create_date,
+ 	MAX(create_date) AS max_create_date,
+	--AVG(create_date) AS avg_create_date is not available on date_time
+ 	COUNT(create_date) AS create_date_count, 
+	MIN(last_update) AS min_last_update,
+	MAX(last_update) AS max_last_update,
+	--AVG(last_update) AS avg_last_update is not available on date_time
+ 	COUNT(last_update) AS last_update_count, 
+ 	MIN(active) AS min_active,
+	MAX(active) AS max_active,
+	AVG(active) AS avg_active,
+ 	COUNT(active) AS active_count,
+ 	COUNT(*) AS row_count
+ FROM customer	
