@@ -1,6 +1,6 @@
 ![Blockbuster parody logo.](https://github.com/bruceramseyer/rockbuster/blob/main/ROCKBUSTER%20logo.png)
 
-###Rockbuster
+### Rockbuster
 SQL analytics project for fictional movie rental company
 
 ## Project Objective
