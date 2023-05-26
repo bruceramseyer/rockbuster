@@ -1,4 +1,4 @@
-# Rockbuster 
+# Rockbuster ![Blockbuster parody logo.](https://github.com/bruceramseyer/rockbuster/blob/main/ROCKBUSTER%20logo.png)
 SQL analytics project for fictional movie rental company
 
 ## Project Objective
@@ -20,6 +20,3 @@ Rockbuster is a fictional movie rental company transitioning from a brick-and-mo
 + rental
 + staff
 + store
-
-
-![test.](https://github.com/bruceramseyer/rockbuster/blob/main/ROCKBUSTER%20logo.png)
