@@ -1,4 +1,4 @@
-# Rockbuster
+# ROCKBUSTER
 SQL analytics project for fictional movie rental company
 
 ## Project Objective
