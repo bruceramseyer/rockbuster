@@ -1,4 +1,4 @@
-# Rockbuster
+# Rockbuster !["Rockbuster" parody logo.](https://photos.app.goo.gl/S1XGzFBgjfj7UZL66)
 SQL analytics project for fictional movie rental company
 
 ## Project Objective
