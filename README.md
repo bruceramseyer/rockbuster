@@ -20,3 +20,6 @@ Rockbuster is a fictional movie rental company transitioning from a brick-and-mo
 + rental
 + staff
 + store
+
+
+![test.](ROCKBUSTER logo.png)
