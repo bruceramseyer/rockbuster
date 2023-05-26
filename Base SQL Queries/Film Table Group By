@@ -3,7 +3,7 @@
 SELECT rating,
 	AVG(rental_rate) AS average_rental_rate,
 	MIN(rental_duration) AS min_duration,
-	MAX(rental_duration) AS max_duration,	
+	MAX(rental_duration) AS max_duration
 FROM film
 GROUP BY rating
 ORDER BY average_rental_rate DESC
