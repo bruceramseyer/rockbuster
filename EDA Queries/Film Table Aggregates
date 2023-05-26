@@ -1,1 +1,28 @@
+/*Numerical fields EDA for film table*/	
+SELECT MIN(release_year) AS min_release_year,	
+	MAX(release_year) AS max_release_year,
+	AVG(release_year) AS avg_release_year,
+ 	COUNT(release_year) AS release_year_count, 
+	MIN(language_id) AS min_language_id,
+	MAX(language_id) AS max_language_id,
+	AVG(language_id) AS avg_language_id,
+ 	COUNT(language_id) AS language_id_count, 
+ 	MIN(rental_duration) AS min_rental_duration,
+ 	MAX(rental_duration) AS max_rental_duration,
+	AVG(rental_duration) AS avg_rental_duration,
+ 	COUNT(rental_duration) AS rental_duration_count, 
+	MIN(length) AS min_length,
+	MAX(length) AS max_length,
+	AVG(length) AS avg_length,
+ 	COUNT(length) AS length_count, 
+ 	MIN(replacement_cost) AS min_replacement_cost,
+ 	MAX(replacement_cost) AS max_replacement_cost,
+	AVG(replacement_cost) AS avg_replacement_cost,
+ 	COUNT(replacement_cost) AS replacement_cost_count, 
+	MIN(last_update) AS min_last_update,
+	MAX(last_update) AS max_last_update,
+	--AVG(last_update) AS avg_last_update is not available on date_time
+ 	COUNT(last_update) AS last_update_count,
+ 	COUNT(*) AS row_count
+FROM film	
 
