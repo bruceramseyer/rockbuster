@@ -1,1 +1,17 @@
+/*Average amount paid by top 5 customers*/	
 
+SELECT AVG(total_amount_paid) AS average
+FROM (SELECT D.city,
+	 E.country,
+	 COUNT(B.customer_id) AS number_of_customer,
+	 SUM(amount) AS total_amount_paid
+FROM payment A
+INNER JOIN customer B ON A.customer_id=B.customer_id
+INNER JOIN address C ON B.address_id=C.address_id
+INNER JOIN city D ON C.city_id=D.city_id
+INNER JOIN top10_countries E ON D.country_id = E.country_id
+GROUP BY city,
+	 country,
+	 number_of_customers
+ORDER BY number_of_customers DESC
+LIMIT 5) AS total_amount_paid
