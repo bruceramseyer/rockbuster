@@ -1,1 +1,9 @@
+/*Movie titles from Film table sorted by year and rental rate*/
 
+SELECT title,
+	release_year,
+	rental_rate
+FROM film
+ORDER BY title ASC,
+	release_year DESC,
+	rental_rate DESC
