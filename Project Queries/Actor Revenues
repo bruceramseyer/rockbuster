@@ -1,1 +1,33 @@
+/*Films with maximum revenue*/				
+
+WITH best_revenue_cte (title,film_id,amount) AS				
+(SELECT title,				
+ 	B.film_id,			
+	SUM(amount)			
+FROM film A				
+INNER JOIN inventory B ON A.film_id=B.film_id				
+INNER JOIN rental C ON B.inventory_id=C.inventory_id				
+INNER JOIN payment D ON C.rental_id=D.rental_id				
+GROUP BY title,				
+ 	B.film_id			
+ORDER BY SUM(amount)DESC				
+LIMIT 5),				
+
+/*Films with minimum revenue*/				
+worst_revenue_cte (title,film_id,amount) AS				
+(SELECT title,				
+ 	B.film_id,			
+	SUM(amount)			
+FROM film A				
+INNER JOIN inventory B ON A.film_id=B.film_id				
+INNER JOIN rental C ON B.inventory_id=C.inventory_id				
+INNER JOIN payment D ON C.rental_id=D.rental_id				
+GROUP BY title,				
+	B.film_id			
+ORDER BY SUM(amount)ASC				
+LIMIT 5)				
+SELECT title AS movie_title, amount AS revenue FROM best_revenue_cte				
+UNION ALL				
+SELECT title AS movie_title, amount AS revenue FROM worst_revenue_cte				
+ORDER BY revenue DESC				
 
